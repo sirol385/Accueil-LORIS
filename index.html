@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portail de Loris 💻</title>
+  <link rel="stylesheet" href="accueil.css" />
+  <link rel="icon" type="image/png" href="accueil.png">
+</head>
+<body>
+  <header>
+    <h1>🚀 Portail de Loris</h1>
+    <p>Bienvenue sur mon espace central regroupant mes projets web !</p>
+  </header>
+  <main>
+    <div class="projects">
+      <div class="project-card">
+        <img src="../Revisions-LORIS/revisions.png" alt="Espace de révisions" />
+        <h2>Espace de Révisions</h2>
+        <p>Révise efficacement toutes tes matières.</p>
+        <a href="../Revisions-LORIS/index.html" class="btn" data-project="revisions">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Parcoursup-LORIS/parcoursup.png" alt="Parcoursup" />
+        <h2>Parcoursup</h2>
+        <p>Prépare-toi efficacement à ton admission sur Parcoursup.</p>
+        <a href="../Parcoursup-LORIS/index.html" class="btn" data-project="parcoursup">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Conduite-LORIS/conduite.png" alt="Conduite" />
+        <h2>Conduite</h2>
+        <p>Toutes les informations pour suivre ta conduite.</p>
+        <a href="../Conduite-LORIS/index.html" class="btn" data-project="conduite">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Drone-LORIS/drone.png" alt="Drone" />
+        <h2>Drone</h2>
+        <p>Retrouve et admire tes plus beaux moments drone.</p>
+        <a href="../Drone-LORIS/index.html" class="btn" data-project="drone">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Informatique-LORIS/informatique.png" alt="Informatique" />
+        <h2>Informatique</h2>
+        <p>L'essentiel de l'informatique, avec aide en un clic.</p>
+        <a href="../Informatique-LORIS/index.html" class="btn" data-project="informatique">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Tondeuse-LORIS/tondeuse.png" alt="Tondeuse" />
+        <h2>Tondeuse</h2>
+        <p>Garde un œil sur les tontes et les statistiques de ton robot.</p>
+        <a href="../Tondeuse-LORIS/index.html" class="btn" data-project="tondeuse">Ouvrir</a>
+      </div>
+      <div class="project-card">
+        <img src="../Calculatrice-LORIS/calculatrice.png" alt="Calculatrice" />
+        <h2>Calculatrice</h2>
+        <p>Effectue des calculs simples et scientifiques.</p>
+        <a href="../Calculatrice-LORIS/index.html" class="btn" data-project="calculatrice">Ouvrir</a>
+      </div>
+    </div>
+  </main>
+  <div id="mentionsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>📄 Mentions légales</h2>
+      <p><strong>Éditeur du site</strong><br>
+      <span class="contact-inline">Loris GOUHIER - lorisgouhier@gmail.com</span><br>
+      Site personnel sans but commercial, réalisé à des fins de présentation et de développement web.</p>
+      <p><strong>Hébergeur/Diffusion/Domaine</strong><br>
+      GitHub Inc, 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.<br>
+      Cloudflare Inc, 101 Townsend Street, San Francisco, CA 94107, États-Unis.<br>
+      OVH SAS, 2 Rue Kellermann, 59100 Roubaix, France.</p>
+      <p><strong>Propriété intellectuelle</strong><br>
+      L'ensemble du contenu présent sur ce site (textes, images, codes sources, etc) est la propriété exclusive de Loris GOUHIER.
+      Conformément à l'article L.122-4 du Code de la propriété intellectuelle,
+      toute reproduction, représentation, même partielle est interdite sans autorisation préalable.</p>
+      <p><strong>Données personnelles</strong><br>
+      Ce site ne collecte aucune donnée personnelle ni aucun cookie de suivi.<br>
+      GitHub et Cloudflare peuvent traiter votre adresse IP pour le fonctionnement et la sécurité du site.</p>
+    <p class="maj-line">Site web et mentions légales mis à jour le <b>03/11/2026</b>.
+  </div>
+  </div>
+  <footer>
+    <p>© 2026 | Tous droits réservés | <a onclick="openModal()">Mentions légales</a></p>
+  </footer>
+  <script src="accueil.js"></script>
+</body>
+</html>
