@@ -7,7 +7,8 @@ function updateResources() {
             'parcoursup': 'https://parcoursup.lorisg.fr/',
             'drone': 'https://drone.lorisg.fr/',
             'tondeuse': 'https://tondeuse.lorisg.fr/',
-            'informatique': 'https://informatique.lorisg.fr/' };
+            'informatique': 'https://informatique.lorisg.fr/',
+            'recettes': 'https://recettes.lorisg.fr/' };
         const resourcesURLs = {
             'revisions': 'https://accueil.lorisg.fr/revisions.png',
             'calculatrice': 'https://accueil.lorisg.fr/calculatrice.png',
@@ -15,7 +16,8 @@ function updateResources() {
             'parcoursup': 'https://accueil.lorisg.fr/parcoursup.png',
             'drone': 'https://accueil.lorisg.fr/drone.png',
             'tondeuse': 'https://accueil.lorisg.fr/tondeuse.png',
-            'informatique': 'https://accueil.lorisg.fr/informatique.png' };
+            'informatique': 'https://accueil.lorisg.fr/informatique.png',
+            'recettes': 'https://accueil.lorisg.fr/recettes.png' };
         document.querySelectorAll('.btn').forEach(link => {
             const projectType = link.getAttribute('data-project');
             if (projectType && vercelURLs[projectType]) {
@@ -36,6 +38,8 @@ function updateResources() {
                 img.src = resourcesURLs['tondeuse'];
             } else if (altText.includes('informatique')) {
                 img.src = resourcesURLs['informatique'];
+            } else if (altText.includes('recettes')) {
+                img.src = resourcesURLs['recettes'];
             }
         });
         document.querySelector('link[rel="stylesheet"]').href = 'https://accueil.lorisg.fr/accueil.css';
